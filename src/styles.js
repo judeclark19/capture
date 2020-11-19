@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutUsDiv = styled.div`
+export const SectionDiv = styled.div`
   min-height: 90vh;
   display: flex;
   align-items: center;

@@ -1,10 +1,10 @@
 import React from "react";
-import { AboutUsDiv, DescriptionDiv, ImageDiv, HideDiv } from "../styles";
+import { SectionDiv, DescriptionDiv, ImageDiv, HideDiv } from "../styles";
 import home1 from "../img/home1.png";
 
 function AboutUs() {
   return (
-    <AboutUsDiv>
+    <SectionDiv>
       <DescriptionDiv>
         <div className="title">
           <HideDiv>
@@ -29,7 +29,7 @@ function AboutUs() {
       <ImageDiv>
         <img src={home1} alt="a cameraman filming" />
       </ImageDiv>
-    </AboutUsDiv>
+    </SectionDiv>
   );
 }
 
