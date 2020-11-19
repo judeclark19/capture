@@ -47,7 +47,7 @@ function Services() {
         </div>
       </div>
       <div className="image">
-        <img src={home2} alt="" />
+        <img src={home2} alt="film camera" />
       </div>
     </div>
   );

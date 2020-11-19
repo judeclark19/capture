@@ -25,7 +25,7 @@ function AboutUs() {
         </p>
         <button>Contact Us</button>
         <div className="image">
-          <img src={home1} alt="guy holding camera" />
+          <img src={home1} alt="a cameraman filming" />
         </div>
       </div>
     </div>
