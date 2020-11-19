@@ -1,3 +1,5 @@
+import "./App.css";
+
 //Pages
 import AboutUs from "./pages/AboutUs";
 

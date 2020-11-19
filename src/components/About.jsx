@@ -1,9 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 import home1 from "../img/home1.png";
 
 function AboutUs() {
   return (
-    <div>
+    <AboutUsDiv>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -28,8 +29,18 @@ function AboutUs() {
           <img src={home1} alt="a cameraman filming" />
         </div>
       </div>
-    </div>
+    </AboutUsDiv>
   );
 }
+
+//Styled Component
+const AboutUsDiv = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 5rem 10rem;
+`;
 
 export default AboutUs;
