@@ -1,5 +1,5 @@
 import React from "react";
-import outdoorDinner from "../img/outdoorDinner.jpg";
+import home1 from "../img/home1.png";
 
 function AboutUs() {
   return (
@@ -25,7 +25,7 @@ function AboutUs() {
         </p>
         <button>Contact Us</button>
         <div className="image">
-          <img src={outdoorDinner} alt="my first image" />
+          <img src={home1} alt="guy holding camera" />
         </div>
       </div>
     </div>

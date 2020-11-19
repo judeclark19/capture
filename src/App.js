@@ -1,4 +1,5 @@
-import AboutUs from "./components/AboutUs";
+//Pages
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
