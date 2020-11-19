@@ -1,5 +1,11 @@
+import AboutUs from "./components/AboutUs";
+
 function App() {
-  return <div className="App">hello world capture</div>;
+  return (
+    <div className="App">
+      <AboutUs />
+    </div>
+  );
 }
 
 export default App;
