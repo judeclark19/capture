@@ -4,6 +4,7 @@ import { titleAnimation, photoAnimation, fade } from "../animation";
 
 import { SectionDiv, DescriptionDiv, ImageDiv, HideDiv } from "../styles";
 import home1 from "../img/home1.png";
+import Wave from "./Wave";
 
 function AboutUs() {
   //Motion "variants"
@@ -38,6 +39,7 @@ function AboutUs() {
           alt="a cameraman filming"
         />
       </ImageDiv>
+      <Wave />
     </SectionDiv>
   );
 }

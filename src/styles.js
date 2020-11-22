@@ -12,6 +12,7 @@ export const SectionDiv = styled.div`
 export const DescriptionDiv = styled.div`
   flex: 1;
   padding-right: 5rem;
+  z-index: 2;
 
   h2 {
     font-weight: lighter;
@@ -21,6 +22,7 @@ export const DescriptionDiv = styled.div`
 export const ImageDiv = styled.div`
   flex: 1;
   overflow: hidden;
+  z-index: 2;
 
   img {
     width: 100%;
