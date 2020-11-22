@@ -15,17 +15,17 @@ export const MovieState = () => {
       url: "/work/the-athlete",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "The Athlete Review 1",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "The Athlete Review 2",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "The Athlete Review 3",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -38,17 +38,17 @@ export const MovieState = () => {
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Good Times Review 1",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Good Times Review 2",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Good Times Review 3",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -61,17 +61,17 @@ export const MovieState = () => {
       secondaryImg: theracer2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "The Racer Review 1",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "The Racer Review 2",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "The Racer Review 3",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
