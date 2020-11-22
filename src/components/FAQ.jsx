@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styled from "styled-components";
 import { SectionDiv } from "../styles";
+import Toggle from "./Toggle";
 
 function FAQ() {
   return (
@@ -9,40 +10,8 @@ function FAQ() {
       <h2>
         <span>Frequently Asked Questions</span>
       </h2>
-      <div className="question">
-        <h4>How do I start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-            praesentium?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What is the process?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-            praesentium?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>How much does it cost?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-            praesentium?
-          </p>
-        </div>
-        <div className="faq-line"></div>
+      <Toggle title="How do I start?">
         <div className="question">
-          <h4>When will I get my finished film?</h4>
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -50,9 +19,44 @@ function FAQ() {
               praesentium?
             </p>
           </div>
-          <div className="faq-line"></div>
         </div>
-      </div>
+      </Toggle>
+
+      <Toggle title="What is the process?">
+        <div className="question">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              praesentium?
+            </p>
+          </div>
+        </div>
+      </Toggle>
+
+      <Toggle title="How much does it cost?">
+        <div className="question">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              praesentium?
+            </p>
+          </div>
+        </div>
+      </Toggle>
+
+      <Toggle title="When will I get my finished film?">
+        <div className="question">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              praesentium?
+            </p>
+          </div>
+        </div>
+      </Toggle>
     </FaqDiv>
   );
 }
