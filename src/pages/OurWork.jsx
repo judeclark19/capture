@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+//Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 //Images
 import athlete from "../img/athlete.png";
 import theracer from "../img/theracer.png";
@@ -9,7 +13,13 @@ import goodtimes from "../img/goodtimes.png";
 
 function OurWork() {
   return (
-    <WORK>
+    <WORK
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "#fff" }}
+    >
       <MOVIE>
         <h2>Athlete</h2>
         <div className="line"></div>
@@ -35,7 +45,7 @@ function OurWork() {
   );
 }
 
-const WORK = styled.div`
+const WORK = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;

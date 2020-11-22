@@ -1,33 +1,42 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { titleAnimation, photoAnimation, fade } from "../animation";
+
 import { SectionDiv, DescriptionDiv, ImageDiv, HideDiv } from "../styles";
 import home1 from "../img/home1.png";
 
 function AboutUs() {
+  //Motion "variants"
+
   return (
     <SectionDiv>
       <DescriptionDiv>
-        <div className="title">
+        <motion.div className="title">
           <HideDiv>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </HideDiv>
           <HideDiv>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span>
-            </h2>
+            </motion.h2>
           </HideDiv>
           <HideDiv>
-            <h2>come true.</h2>
+            <motion.h2 variants={titleAnimation}>come true.</motion.h2>
           </HideDiv>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           Contact us for your service needs. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Nisi vel veritatis a necessitatibus
           architecto!
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </DescriptionDiv>
       <ImageDiv>
-        <img src={home1} alt="a cameraman filming" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="a cameraman filming"
+        />
       </ImageDiv>
     </SectionDiv>
   );
