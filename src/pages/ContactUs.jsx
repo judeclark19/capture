@@ -68,6 +68,7 @@ const SOCIAL = styled(motion.div)`
   align-items: center;
   h2 {
     margin: 2rem;
+    font-size: 30pt;
   }
 `;
 
@@ -76,6 +77,11 @@ const CIRCLE = styled.div`
   width: 3rem;
   height: 3rem;
   background: #353535;
+
+  @media (max-width: 1300px) {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 export default ContactUs;
