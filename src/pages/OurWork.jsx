@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 //Animation
 import { motion } from "framer-motion";
+import { useScroll } from "../components/useScroll";
 import {
   pageAnimation,
   fade,
@@ -19,6 +20,9 @@ import theracer from "../img/theracer.png";
 import goodtimes from "../img/goodtimes.png";
 
 function OurWork() {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+
   return (
     <WORK
       variants={pageAnimation}
@@ -42,16 +46,21 @@ function OurWork() {
           </HiddenOverflow>
         </Link>
       </MOVIE>
-      <MOVIE>
+      <MOVIE ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>The Racer</h2>
-        <motion.div className="line"></motion.div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-racer">
           <img src={theracer} alt="The Racer" />
         </Link>
       </MOVIE>
-      <MOVIE>
+      <MOVIE
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+      >
         <h2>Good Times</h2>
-        <motion.div className="line"></motion.div>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/good-times">
           <img src={goodtimes} alt="Good Times" />
         </Link>
@@ -70,7 +79,7 @@ const WORK = styled(motion.div)`
   }
 `;
 
-const MOVIE = styled.div`
+const MOVIE = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
