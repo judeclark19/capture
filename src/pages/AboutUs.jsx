@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTop from "../components/ScrollToTop";
 //Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
@@ -15,6 +16,7 @@ function AboutUs() {
       initial="hidden"
       animate="show"
     >
+      <ScrollToTop />
       <About />
       <Services />
       <FAQ />

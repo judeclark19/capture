@@ -30,7 +30,9 @@ function AboutUs() {
           consectetur adipisicing elit. Nisi vel veritatis a necessitatibus
           architecto!
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button variants={fade} id="targetme">
+          Contact Us
+        </motion.button>
       </DescriptionDiv>
       <ImageDiv>
         <motion.img

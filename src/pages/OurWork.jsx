@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 //Animation
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
+import ScrollToTop from "../components/ScrollToTop";
 import {
   pageAnimation,
   fade,
@@ -31,6 +32,7 @@ function OurWork() {
       exit="exit"
       style={{ background: "#fff" }}
     >
+      <ScrollToTop />
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
@@ -76,6 +78,10 @@ const WORK = styled(motion.div)`
 
   h2 {
     padding: 1rem 0rem;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
   }
 `;
 

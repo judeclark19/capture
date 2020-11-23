@@ -6,6 +6,7 @@ import { MovieState } from "../movieState";
 //Animation
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollToTop from "../components/ScrollToTop";
 
 //MAIN COMPONENT
 function MovieDetail() {
@@ -30,6 +31,7 @@ function MovieDetail() {
           animate="show"
           exit="exit"
         >
+          <ScrollToTop />
           <HEADLINE>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt={movie.title} />
@@ -98,6 +100,11 @@ const AWARDS = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 1300px) {
+    display: block;
+    margin: 3rem;
+  }
 `;
 
 const AWARD = styled.div`

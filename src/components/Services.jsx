@@ -65,19 +65,29 @@ const ServicesDiv = styled(SectionDiv)`
   }
 
   p {
+    /* border: 1px dashed blue; */
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
 `;
 
 const CARDS = styled.div`
+  /* border: 1px dashed white; */
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 
 const CARD = styled.div`
-  /* border: 1px dashed white; */
-  flex-basis: 20rem;
+  /* border: 1px dashed gray; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* flex-basis: 20rem; */
   .icon {
     display: flex;
     align-items: center;
