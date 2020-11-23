@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { useScroll } from "./useScroll";
+import { fade } from "../animation";
 
 import { SectionDiv, DescriptionDiv, ImageDiv, HideDiv } from "../styles";
 
@@ -12,8 +14,9 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 
 function Services() {
+  const [element, controls] = useScroll();
   return (
-    <ServicesDiv>
+    <ServicesDiv variants={fade} animate={controls} ref={element}>
       <DescriptionDiv>
         <h2>
           High <span>quality</span> services
